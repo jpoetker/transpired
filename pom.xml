@@ -30,6 +30,7 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<github.global.server>github-jpoetker</github.global.server>
+		<github.maven.repository>file:///${user.home}/repository/maven-repository/</github.maven.repository>
 	</properties>
 	<repositories>
 		<repository>
@@ -40,6 +41,12 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>maven-repository</id>
+			<url>${github.maven.repository}</url>
+		</repository>
+	</distributionManagement>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
