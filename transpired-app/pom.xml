@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>transpired-app</artifactId>
+	<packaging>jar</packaging>
+	<name>Transpired Application</name>
+	<description>Transpired Spring Boot Application</description>
+	<url>https://github.com/jpoetker/transpired/transpired-app</url>
+
+	<parent>
+		<groupId>jpoetker.transpired</groupId>
+		<artifactId>transpired-parent</artifactId>
+		<version>0.0.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<start-class>jpoetker.transpired.Application</start-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>1.2.1.RELEASE</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>
